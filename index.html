@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Importance of Vibe Coding</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 2rem;
+      background-color: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .quote {
+      margin-top: 20px;
+      font-style: italic;
+      color: #94a3b8;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #38bdf8;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #0f172a;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Why Vibe Coding Matters</h1>
+    <p>
+      Vibe coding isn’t just about writing functional code. It’s about expressing yourself,
+      creating clean, readable, and positive energy code that feels good to write and maintain.
+      Whether it’s through good naming conventions, comments, meaningful structure, or that
+      little emoji in a commit message—vibe matters.
+    </p>
+    <p>
+      Clean code = calm mind. Intuitive logic = happy teammates. Vibe coding is the difference
+      between building something forgettable and something you’re proud of.
+    </p>
+    <p>
+      As developers, we don’t just build for machines. We build for future humans—including ourselves.
+    </p>
+    <div class="quote" id="vibeQuote"></div>
+    <button onclick="showQuote()">Need More Vibe?</button>
+  </div>
+
+  <script>
+    const quotes = [
+      "Code like a poet. Ship like a pro.",
+      "Vibes > velocity. Clean code flows smoother.",
+      "Great code reads like a good story.",
+      "Style is a discipline. Let your code breathe.",
+      "Clarity is kind. Vibe is clarity in motion."
+    ];
+
+    function showQuote() {
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("vibeQuote").textContent = quote;
+    }
+
+    // Show a random quote on load
+    window.onload = showQuote;
+  </script>
+</body>
+</html>
